@@ -5,10 +5,12 @@ from getpass import getpass
 
 from dotenv import load_dotenv
 
-# Ordem de prioridade: se o provider do primeiro estiver lotado, tenta o segundo, e assim por diante.
+# Ordem de prioridade: se o provider do primeiro estiver lotado, tenta o segundo.
+# Teste tool-calling em 05/10/2026: nemotron OK; z-ai/glm-5.2:free deu 404
+# ("unavailable for free", slug aposentado) e foi removido; gemma deu 429
+# upstream (provider lotado = caso que ativa o fallback).
 MODELOS = [
     "nvidia/nemotron-3.5-lightning:free",
-    "z-ai/glm-5.2:free",
     "google/gemma-4-26b-a4b-it:free",
 ]
 
