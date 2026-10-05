@@ -23,7 +23,7 @@ dev = [
 ]
 
 [project.scripts]
-cinedata-chat = "cinedata.cli:main"
+cinedata = "cinedata.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
