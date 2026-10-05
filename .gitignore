@@ -219,5 +219,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-/dados
+/src/cinedata/data/cinerocket.db
 /docs
